@@ -43,3 +43,5 @@ if __name__ == "__main__":
     print(get_square(5))  # Computes and stores 5^2
     print(get_square(5))  # Fetches from cache
     print(get_square(3))  # Computes and stores 3^2
+
+    print(clear_cache())
