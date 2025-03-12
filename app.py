@@ -9,11 +9,10 @@ def log_event(event):
     print(f"Logged event: {event}")
 
 def check_disk_space():
-    """Checks available disk space (simulated)."""
-    # In a real-world scenario, you might use `shutil.disk_usage('/')`
-    free_space = 50  # Simulating 50GB free space
-    print(f"Available disk space: {free_space}GB")
-    return free_space
+        """Checks available disk space and logs the usage."""
+        free_space = 50  # Simulating 50GB free space
+        log_event(f"Disk space available: {free_space}GB")
+        return free_space
 
 
 # Simple caching function to store and reuse computed results
