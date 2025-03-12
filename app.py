@@ -9,10 +9,13 @@ def log_event(event):
     print(f"Logged event: {event}")
 
 def check_disk_space():
-    """Checks available disk space (simulated)."""
-    # In a real-world scenario, you might use `shutil.disk_usage('/')`
+    """Checks available disk space (simulated with warning levels)."""
     free_space = 50  # Simulating 50GB free space
     print(f"Available disk space: {free_space}GB")
+        
+    if free_space < 20:
+        print("Warning: Low disk space!")
+        
     return free_space
 
 
